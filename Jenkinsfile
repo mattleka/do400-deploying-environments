@@ -47,7 +47,7 @@ pipeline {
         }
         stage('Deploy - Stage') {
 		environment {
-		  APP_NAMESPACE = "${nidkfe}-shopping-cart-stage"
+		  APP_NAMESPACE = '${nidkfe}-shopping-cart-stage'
 		  QUAY = credentials('QUAY_USER')
 		}
 		steps {
